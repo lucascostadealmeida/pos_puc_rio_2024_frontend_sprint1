@@ -39,57 +39,25 @@ Este documento fornece uma visão geral do código HTML fornecido e suas funcion
 
 - Exibe o conteúdo da página inicial e atualiza a barra lateral.
 
-### `showLogin()`
+### `showListOfWines()`
 
-- Exibe o formulário de login e atualiza a barra lateral.
+- Exibe a lista de vinhos cadastrados e atualiza a barra lateral.
 
-### `showRegister()`
+### `showCadOfWines()`
 
-- Exibe o formulário de registro e atualiza a barra lateral.
+- Exibe o formulário para cadastro de novos vinhos e atualiza a barra lateral.
 
-### `showLogout()`
+### `submitRegisterWine()`
 
-- Realiza o logout do usuário e atualiza a barra lateral.
+- Envia uma solicitação para cadastrar um novo vinho no servidor backend.
 
-### `showQRCode()`
+### `fetchWines()`
 
-- Exibe o campo para inserção de código QR e atualiza a barra lateral.
-
-### `showListOfProducts()`
-
-- Exibe a lista de produtos cadastrados e atualiza a barra lateral.
-
-### `showCadOfProducts()`
-
-- Exibe o formulário para cadastro de novos produtos e atualiza a barra lateral.
-
-### `submitRegister()`
-
-- Envia uma solicitação para registrar um novo usuário no servidor backend.
-
-### `submitLogin()`
-
-- Envia uma solicitação para autenticar um usuário no servidor backend.
-
-### `submitQRCode()`
-
-- Envia uma solicitação para processar um código QR e cadastrar os produtos associados.
-
-### `submitLogout()`
-
-- Envia uma solicitação para desconectar o usuário e remove o token de autenticação armazenado.
-
-### `submitRegisterProduct()`
-
-- Envia uma solicitação para cadastrar um novo produto no servidor backend.
-
-### `fetchProducts()`
-
-- Envia uma solicitação para recuperar a lista de produtos cadastrados e atualiza a tabela na interface do usuário.
+- Envia uma solicitação para recuperar a lista de vinhos cadastrados e atualiza a tabela na interface do usuário.
 
 ## Integração com o Backend
 
-O código utiliza a biblioteca Axios para enviar solicitações HTTP para endpoints no servidor backend, lidando com operações de registro, login, logout, processamento de código QR e interação com a lista e cadastro de produtos.
+O código utiliza a biblioteca Axios para enviar solicitações HTTP para endpoints no servidor backend, lidando com operações de cadastro e listagem de dados.
 
 ## Armazenamento Local
 
